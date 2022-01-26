@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeliveryApp.View.Inicio"
+             BackgroundColor="White">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" VerticalOptions="CenterAndExpand" ColumnDefinitions="*,*" Padding="40,20,40,0">
+
+            <Button HorizontalOptions="Start" ImageSource="ArrowVoltar" WidthRequest="50" Grid.Row="0" Grid.Column="0"
+                    BackgroundColor="#fee489" CornerRadius="15"/>
+
+            <Label Grid.Row="0" Grid.Column="1" Text="Skip" HorizontalOptions="End" HorizontalTextAlignment="End" FontAttributes="Bold" />
+
+            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="PapelParedeFood" Aspect="AspectFill"/>
+            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="ComidaInicio" Margin="0,50,0,30" VerticalOptions="Start"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ojek" TextColor="#fdc912"/>
+                        <Span Text=" Food" TextColor="#bf2103"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Peça sua comida e espere de case,&#10;facil e rapido." Padding="0,20" HorizontalTextAlignment="Center" FontSize="20"/>
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" ImageSource="VoltarBranco"  HorizontalOptions="Center" 
+                    BackgroundColor="#fdc912" HeightRequest="110" WidthRequest="110" CornerRadius="55" Margin="0,60,0,0"
+                    Clicked="GoHome"/>
+
+        </Grid>
+</ContentPage>
