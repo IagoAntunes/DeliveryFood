@@ -15,6 +15,7 @@ namespace DeliveryApp.View
         public Home()
         {
             InitializeComponent();
+            BindingContext = new ViewModel.HomeViewModel();
         }
     }
 }
